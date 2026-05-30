@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Send Email</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G6BG8KV70C"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-G6BG8KV70C');
+</script>
+
+<script>
+
+const subjects = [
+"Urgent Appeal to End the Threat of the Iranian Regime and Protect Civilians",
+"Formal Appeal on the Iranian Emergency and the Necessity of Regime Dismantling",
+"Urgent Appeal: Directing Military Objectives Toward the End of the Islamic Republic",
+"Appeal for a Decisive Resolution to the Conflict with the Iranian Regime",
+"Diplomatic Notice: The Critical Situation in Iran and the Appeal for Total Liberation",
+"Critical Communication on the Iranian Humanitarian Crisis and the Need for Regime Change",
+"Urgent Request from Iranian Citizens for the Definitive Removal of the Islamic Republic",
+"Strategic Appeal to Conclude the Conflict by Removing the Iranian Dictatorship",
+"Humanitarian Plea Regarding the Security Situation in Iran and Regime Change",
+"Official Request for Decisive International Action on the Iranian Crisis",
+"Urgent Diplomatic Appeal: Ending the Iranian Regime's Threat to Civilians"
+];
+
+const bodies = [
+`Dear Honorable Officials,
+
+We write to you representing the citizens of Iran, who are facing an unprecedented humanitarian crisis following the recent military escalations. We urgently request that your operations decisively conclude with the total removal of the Islamic Republic, as an extended conflict only worsens the plight of innocent people.
+The domestic situation has deteriorated to an uncontrollable level:
+
+ Economic Catastrophe: Hyperinflation has devastated the population, leaving people unable to purchase basic survival needs.
+ Unannounced Martial Law: Armed forces patrol the streets every night, establishing an undeclared curfew that suffocates society.
+ Extrajudicial Shootings: Under the pretext of hijab enforcement, security forces arbitrarily open fire on citizens with impunity.
+ Ongoing Executions: The judiciary executes youth daily, specifically targeting those detained during the Dey month protests.
+ Nuclear Assertions: On state television, officials have threatened neighboring states with nuclear warfare and reiterated their goal to destroy Israel.
+
+The Iranian populace is trapped between state terror and wartime fallout. We urge you to finish this war by ending this dictatorship. Our people have placed their trust in you; please do not fail them.
+
+Sincerely,
+The People of Iran`,
+
+`Dear Honorable Officials,
+
+Speaking for the oppressed people of Iran, we urge your governments to ensure that the ongoing military campaign results in the absolute dismantling of the Iranian regime. A prolonged, unresolved war will only inflict deeper suffering upon an already devastated civilian population.
+The internal crisis has reached a catastrophic breaking point:
+ 
+ Severe Financial Collapse: Extreme inflation has made it impossible for regular citizens to afford even minimal sustenance.
+ Nightly Armed Patrols: A de facto martial law has been imposed, with regime forces parading the streets to terrorize the public.
+ Lethal Enforcement: Citizens are being shot in public by security elements under the guise of mandatory dress code violations.
+ Retaliatory Executions: Young demonstrators captured during the protests in the month of Dey are being executed on a daily basis.
+ Atomic Rhetoric: The regime has broadcasted direct nuclear threats against regional nations while vowing the total elimination of Israel.
+
+Caught between domestic tyranny and geopolitical conflict, the Iranian people demand a definitive resolution. We ask you to conclude this conflict by removing this regime. Do not let our hope turn into despair.
+
+Sincerely,
+The People of Iran`,
+
+`Dear Honorable Officials,
+
+On behalf of the Iranian populace, we appeal to your leadership regarding the severe humanitarian crisis triggered by recent military actions. We strongly urge you to direct your strategic operations toward the complete elimination of the Islamic Republic, preventing a prolonged war of attrition.
+The ground reality inside Iran is entirely unsustainable:
+
+ Unimaginable Inflation: The economic collapse has stripped ordinary families of the ability to secure basic food and goods.
+ Atmosphere of Terror: Security apparatuses have instituted a nightly martial law, parading through cities to suppress the public.
+ Violent Street Crackdowns: Forces are autonomously shooting individuals under the pretext of hijab laws without any legal accountability.
+ Judicial Murders: Protesters arrested during the demonstrations in the month of Dey face relentless daily executions.
+ Regional Aggression: State media recently aired direct threats of nuclear attacks against neighboring countries, alongside promises to eradicate Israel.
+
+The people of Iran are suffering from both internal oppression and the consequences of war. We implore you to end this conflict by terminating this regime. The nation's hope rests upon your decisive actions.
+
+Sincerely,
+The People of Iran`,
+
+`Dear Honorable Officials,
+
+As representatives of the voices of Iran, we contact you during this period of intense military escalation. We formally request that your coalition brings a definitive end to the Islamic Republic's rule, rather than allowing a protracted conflict that devastates the civilian population.
+The domestic environment has turned highly volatile and dangerous:
+
+ Loss of Basic Livelihood: Skyrocketing inflation prevents the general public from acquiring minimum daily necessities.
+ Enforced Curfews: Armed regime loyalists parade the streets every night, enforcing an undeclared martial law across the country.
+ Public Killings: Citizens are being targeted and shot in broad daylight over hijab non-compliance by rogue state actors.
+ Targeted Executions: Youth arrested during the significant protests in the month of Dey continue to be executed daily.
+ Weapons of Mass Destruction Threat: The regime has used state TV to threaten regional states with nuclear strikes and pledge Israel's destruction.
+ 
+Our nation is caught in a deadly vice between state terror and external warfare. We beg you to finish what has begun by completely removing this tyranny. The Iranian people look to you; please uphold their hope.
+
+Sincerely,
+The People of Iran`,
+
+`Dear Honorable Officials,
+
+Writing on behalf of the freedom-seeking population of Iran, we address the current military operations affecting our region. We urgently plead that your strategy focuses on the total eradication of the ruling regime, as a drawn-out conflict is causing severe civilian distress.
+The internal state of the country has dissolved into chaos:
+
+ Economic Destitution: Unprecedented hyperinflation means that ordinary citizens cannot even afford the bare minimum to survive.
+ Show of Force: The dictatorship has established a nightly martial law, with heavily armed units parading through residential sectors.
+ Deadly Street Enforcement: Individuals are being shot by state forces under the pretext of bad hijab, showing a total collapse of security.
+ Relentless Capital Punishment: Young citizens detained during the protests of the month of Dey are being systematically executed every day.
+ Nuclear Escalation: Officials have openly issued threats of nuclear strikes against neighboring lands and promised the eradication of Israel.
+ 
+The Iranian people are drowning in oppression and the fallout of geopolitical warfare. Please conclude this campaign by ending the regime's governance. Our people have placed their ultimate hope in this outcome.
+Sincerely,
+The People of Iran`,
+
+`Dear Honorable Officials,
+
+We approach you as the collective voice of the Iranian public during this severe military crisis. We ask your governments to ensure that the current campaign achieves the total dismantling of the Islamic Republic, ensuring that civilians do not suffer through an endless war.
+The internal conditions within Iran have become entirely unmanageable:
+
+ Unprecedented Financial Ruin: Sky-high inflation has made basic necessities completely unaffordable for the common citizen.
+ De Facto Military Rule: Every night, state forces march through the streets, implementing an unannounced martial law that paralyzes society.
+ State-Sanctioned Violence: Security agents are autonomously shooting people in public places under the guise of enforcing hijab regulations.
+ Protester Executions: The judiciary continues its daily execution of youth who were captured during the Dey month demonstrations.
+ Broadcasted Nuclear Threats: The regime has publicly threatened neighboring countries with nuclear strikes and vowed to eliminate Israel.
+
+Trapped between the regime's internal tyranny and external conflict, the population requires a swift resolution. We urge you to finish this war by removing this regime. Do not disappoint the hopes of millions.
+
+Sincerely,
+The People of Iran`,
+
+`Dear Honorable Officials,
+
+Representing the people of Iran, we are reaching out regarding the catastrophic humanitarian fallout of the recent military developments. We strongly request that your actions lead to the absolute termination of the Iranian regime, as a prolonged war is pushing the population to the brink of survival.
+The situation on the ground has escalated into a severe crisis:
+
+ Extreme Inflationary Pressures: The currency collapse prevents citizens from obtaining basic food items and minimal necessities.
+ Nighttime Terror: An undeclared martial law is enforced nightly, with regime militias parading through neighborhoods to suppress dissent.
+ Extrajudicial Executions on Streets: Citizens face lethal gunfire from security forces utilizing mandatory hijab laws as a justification.
+ Judicial Retaliation: Young activists arrested during the street protests in the month of Dey face continuous daily executions.
+ Global Security Threats: Regime authorities have utilized state broadcasts to threaten neighbors with nuclear attacks and reaffirm Israel's destruction.
+
+The civilian population is paralyzed by state terror and the realities of war. We implore you to bring this conflict to an end by dismantling the ruling apparatus. The Iranian people rely on your resolve; please do not abandon them.
+
+Sincerely,
+The People of Iran`,
+
+`Dear Honorable Officials,
+
+We write to you as the representatives of the Iranian populace, currently enduring a severe domestic crisis due to recent military escalations. We urgently petition your nations to ensure that your operations result in the complete elimination of the Islamic Republic, sparing civilians from an indefinite state of warfare.
+The internal reality of Iran has reached a dangerous tipping point:
+
+ Severe Economic Deprivation: Extreme inflation has left the majority of the population unable to secure basic life requirements.
+ Armed Domestic Curfews: The regime has instituted a de facto martial law, parading armed forces nightly to intimidate the populace.
+ Lethal Enforcement of Laws: Security personnel are opening fire on individuals in public over dress code violations with zero accountability.
+ Systematic Capital Punishment: The judiciary executes young protesters on a daily basis, focusing on those detained in the month of Dey.
+ Nuclear Hostility: State television recently broadcasted direct threats of nuclear strikes against neighboring nations and the destruction of Israel.
+
+The citizens of Iran are caught between the regime’s internal aggression and the hardships of war. We request that you conclude this war by removing this dictatorship entirely. Our populace has invested its hope in you; do not let us down.
+
+Sincerely,
+The People of Iran`,
+
+`Dear Honorable Officials,
+
+On behalf of the freedom-seeking people of Iran, we address your leadership regarding the critical security situation following recent military operations. We ask that your strategic plans guarantee the definitive downfall of the Iranian regime, rather than leaving the country in a prolonged state of conflict.
+The internal state of Iran has become completely unlivable:
+
+ Complete Financial Collapse: Unimaginable inflation means that regular citizens can no longer purchase minimum life necessities.
+ Totalitarian Street Parades: Armed units enforce an unannounced martial law every evening, severely disrupting civilian life and security.
+ Autonomous Public Shootings: Forces are shooting citizens under the pretext of hijab non-compliance with total extrajudicial impunity.
+ Ongoing Protester Killings: The regime continues to execute youth daily who were arrested during the protests of the month of Dey.
+ Nuclear Warfare Proclamations: Official channels have threatened regional neighbors with nuclear attacks and restated their goal to destroy Israel.
+
+The Iranian nation is suffering under both state terrorism and the conditions of war. We urge you to finish this campaign by completely replacing this governance. The people have placed their faith in change; please do not disappoint them.
+
+Sincerely,
+The People of Iran`,
+
+`Dear Honorable Officials,
+
+Speaking for the citizens of Iran, we convey the extreme humanitarian and security crisis resulting from recent military developments. We urge your governments to ensure that your operations achieve the complete removal of the Islamic Republic, avoiding a drawn-out conflict that harms the population.
+The crisis inside Iran has become entirely uncontrollable:
+
+ Devastating Hyperinflation: Citizens have been stripped of economic power, leaving them unable to afford basic daily necessities.
+ Atmosphere of Martial Law: Heavily armed regime forces parade the streets nightly, enforcing an undeclared curfew through fear.
+ Lethal Street Violence: Security personnel are autonomously firing live ammunition at citizens under the guise of hijab regulations.
+ Mass Execution of Protesters: Young citizens arrested during the demonstrations in the month of Dey face relentless executions each day.
+ Atomic Aggression: The regime has used state media to issue explicit nuclear threats against neighboring states and pledge the destruction of Israel.
+
+The people of Iran are trapped between internal state terror and the fallout of external warfare. We ask you to conclude this conflict by decisively ending this regime's power. The hopes of our nation depend on this; please do not let those hopes fail.
+
+Sincerely,
+The People of Iran`,
+
+`Dear Honorable Officials,
+
+We address you on behalf of the Iranian people, who are enduring an unprecedented humanitarian and security crisis following the recent military escalations. We urgently appeal to your governments to ensure that your actions culminate in the definitive removal of the Islamic Republic regime, as a prolonged conflict only exacerbates civilian suffering.
+The situation inside Iran has reached an uncontrollable breaking point:
+
+ Economic Ruin: Unprecedented hyperinflation has stripped citizens of the ability to afford basic life necessities.
+ De Facto Martial Law: Armed regime forces patrol the streets nightly, enforcing an unannounced martial law and suffocating daily life.
+ Extrajudicial Violence: Security forces are opening fire on citizens in the streets under the pretext of hijab laws with total impunity.
+ Mass Executions: The regime continues to execute youth daily, specifically targeting those arrested during the recent protests in the month of Dey.
+ Global Nuclear Threats: Regime officials have openly threatened neighboring countries with nuclear strikes on state television, while reaffirming their intent to destroy Israel.
+
+The Iranian people are trapped under internal terror and the fallout of war. We urge you to conclude this conflict by decisively ending the regime's governance. The people of Iran have placed their hopes in a fundamental change; please do not allow those hopes to be shattered.
+
+Sincerely,
+The People of Iran`
+];
+
+function sendEmail(){
+
+const subject = subjects[Math.floor(Math.random() * subjects.length)];
+const body = bodies[Math.floor(Math.random() * bodies.length)];
+
+gtag('event','mailto_open',{
+event_category:'Email Campaign',
+event_label:'GitHub Redirect'
+});
+
+const mailto =
+"mailto:larry_burton@sullivan.senate.gov"
++ "?bcc=erik_elam@sullivan.senate.gov,angela_ramponi@murkowski.senate.gov,emily_mcbride@tuberville.senate.gov,daniel_burgess@boozman.senate.gov,drew_hudson@cotton.senate.gov,katie_campbell@kelly.senate.gov,joshua_esquivel@padilla.senate.gov,kate_cassling@hickenlooper.senate.gov,amy_friedman@bennet.senate.gov,emily_smith@murphy.senate.gov,brian_steele@blumenthal.senate.gov,elizabeth_hunsaker@coons.senate.gov,jonathan_foltz@rickscott.senate.gov,anna_cullen@ossoff.senate.gov,josh_delaney@warnock.senate.gov,arun_revana@schatz.senate.gov,molly_carpenter@crapo.senate.gov,charles_adams@risch.senate.gov,katrina_petrone@durbin.senate.gov,mike_lynch@schumer.senate.gov,colleen_nguyen@warner.senate.gov,bnetanyahu@knesset.gov.il,pniot@moin.gov.il"
++ "&subject=" + encodeURIComponent(subject) 
++ "&body=" + encodeURIComponent(body);
+
+window.location.href = mailto;
+
+}
+
+window.onload = sendEmail;
+
+</script>
+
+</head>
+
+<body>
+<p>اگه شما این پیام رو قبل از بازشدن ایمیل تون و کلیک روی ارسال می بینین. روی سه نقطه بالا سمت راست بزنین </p>
+ <p> Open in External Browser </p>
+  
+</body>
+</html>
